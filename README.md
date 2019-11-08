@@ -15,15 +15,11 @@ yarn start
 ## Challenge
 - Review the mock up available on [Figma](https://www.figma.com/file/GsigoCnExV2jjTBanMZwFr/Dog-Breeds) (you will need to sign up for a free figma account to be able to inspect all the elements for paddings/margins etc)
 
-- Review the [Dog.ceo api documentation](https://dog.ceo/dog-api/)
+- Review the [Dog.ceo api `By Breed` endpoint documentation](https://dog.ceo/dog-api/documentation/breed)
 
 - The goal of this challenge is to be able to search for a breed of dogs in a search input and then display up to 10 images of that breed of dog on screen
 
 - You should be able to favorite and unfavorite images of dogs, moving them into and out of the favorites section of the page
-
-- Add typings for any functions or Objects that are being used in the application
-
-- Add tests for any components you write For testing, focus on validating any logic or functionlity that has been introduced in the component
 
 - Submit a PR in your repository, with a descriptive message, and no more than a few commits (each with a clear purpose)
 
@@ -33,19 +29,7 @@ yarn start
 
 - Feel free to ask questions, as we want to simulate working with the team
 
+## Tips
+- Be sure to add accurate typings! 
 
-## Extended Tasks
-You want to take this further or have extra time?  Awesome, choose any of these extension tasks that interest you:
-- Add a section below the search bar that keeps track of what has previously been searched
-
-- Clicking on one of those previous searches invokes a new search of that breed
-
-- Visually distinguish between previous searches that were successful (200) and unsuccessful (404)
-
-- Display a running total of the number of times each search was run. ie. `Hound x 2`, `no good search x 4`
-
-- Refactor your state management to use [Redux Sagas](https://redux-saga.js.org/) and selectors
-
-- Add a `production` webpack config that bundles and minifies the code
-
-- Deploy a minified version to Netlify 
+- Add some tests to verify that your components are working properly
