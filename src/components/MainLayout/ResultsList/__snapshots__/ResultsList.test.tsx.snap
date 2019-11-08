@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultsList component renders the UI as expected when given no urls 1`] = `
+<div
+  className="css-r0qpvp"
+/>
+`;

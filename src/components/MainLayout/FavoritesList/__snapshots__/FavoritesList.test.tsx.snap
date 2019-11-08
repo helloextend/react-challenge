@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavoritesList component renders 3 dog images when given 3 urls 1`] = `
+Array [
+  <h1
+    className="css-ag576t"
+  >
+    <img
+      alt="red heart icon"
+      className="css-19vi65q"
+      onClick={[Function]}
+      src="test-file-stub"
+      style={
+        Object {
+          "marginRight": "30px",
+        }
+      }
+    />
+    Favorites
+  </h1>,
+  <div
+    className="css-1740rzu"
+  >
+    <div
+      className="css-79elbk"
+    >
+      <img
+        alt="dog"
+        className="css-aynx1p"
+        src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"
+      />
+      <img
+        alt="white heart icon"
+        className="css-19vi65q"
+        onClick={[Function]}
+        src="test-file-stub"
+        style={
+          Object {
+            "bottom": "34px",
+            "position": "absolute",
+            "right": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="css-79elbk"
+    >
+      <img
+        alt="dog"
+        className="css-aynx1p"
+        src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg"
+      />
+      <img
+        alt="white heart icon"
+        className="css-19vi65q"
+        onClick={[Function]}
+        src="test-file-stub"
+        style={
+          Object {
+            "bottom": "34px",
+            "position": "absolute",
+            "right": "10px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="css-79elbk"
+    >
+      <img
+        alt="dog"
+        className="css-aynx1p"
+        src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg"
+      />
+      <img
+        alt="white heart icon"
+        className="css-19vi65q"
+        onClick={[Function]}
+        src="test-file-stub"
+        style={
+          Object {
+            "bottom": "34px",
+            "position": "absolute",
+            "right": "10px",
+          }
+        }
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`FavoritesList component renders the UI as expected when given no urls 1`] = `
+Array [
+  <h1
+    className="css-ag576t"
+  >
+    <img
+      alt="red heart icon"
+      className="css-19vi65q"
+      onClick={[Function]}
+      src="test-file-stub"
+      style={
+        Object {
+          "marginRight": "30px",
+        }
+      }
+    />
+    Favorites
+  </h1>,
+  <div
+    className="css-1740rzu"
+  />,
+]
+`;

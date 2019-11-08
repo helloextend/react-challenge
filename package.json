@@ -54,8 +54,10 @@
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
+    "jest-fetch-mock": "^2.1.2",
     "react-hot-loader": "^4.12.15",
     "react-redux": "^7.1.1",
+    "react-test-renderer": "^16.11.0",
     "redux": "^4.0.4"
   }
 }

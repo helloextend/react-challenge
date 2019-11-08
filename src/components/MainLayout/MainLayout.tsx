@@ -6,7 +6,7 @@ import ResultsList from './ResultsList/ResultsList';
 import FavoritesList from './FavoritesList/FavoritesList';
 
 type DogState = {
-  results: [string],
+  results: Array<string>,
   favorites: Array<string>,
 }
 
