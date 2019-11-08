@@ -6,6 +6,7 @@ describe('<Heart />', () => {
   const mockProps = {
     icon: 'redHeartIcon',
     alt: 'My fake alt text',
+    style: {}
   }
 
   it('renders without crashing', () => {

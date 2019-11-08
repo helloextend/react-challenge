@@ -2,12 +2,13 @@ import React, { FC } from 'react'
 import { hot } from 'react-hot-loader/root'
 import styled from '@emotion/styled'
 import Header from './Header'
+import MainLayout from './MainLayout/MainLayout';
 
 const App: FC = () => {
   return (
     <Container>
       <Header />
-      {/* Happy coding! */}
+      <MainLayout />
     </Container>
   )
 }
