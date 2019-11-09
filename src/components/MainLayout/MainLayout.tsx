@@ -1,24 +1,31 @@
 import React, { Component } from 'react';
-import styled from '@emotion/styled'
 import SearchBar from './SearchBar/SearchBar';
-import { thisTypeAnnotation } from '@babel/types';
 import ResultsList from './ResultsList/ResultsList';
 import FavoritesList from './FavoritesList/FavoritesList';
+import { Searches } from '../../assets/custom';
 
 type DogState = {
   results: Array<string>,
   favorites: Array<string>,
+  previousSearches: Searches,
 }
 
 class MainLayout extends Component<{}, DogState> {
-
-  componentWillMount() {
-    this.setState({ results: [''], favorites: [] });
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      results: [''],
+      favorites: [''],
+      previousSearches: {
+        valid: [],
+        invalid: []
+      }
+    };
   }
 
   componentDidMount() {
     this.setState({
-      favorites: JSON.parse(localStorage.getItem('favorites'))
+      favorites: JSON.parse(localStorage.getItem('favorites')) || []
     })
   }
 
@@ -27,7 +34,26 @@ class MainLayout extends Component<{}, DogState> {
     ev.preventDefault();
     fetch(`https://dog.ceo/api/breed/${searchTerm}/images`)
       .then(response => response.json())
-      .then(responseJson => this.setState({ results: responseJson.message }))
+      .then(responseJson => {
+        if (responseJson.status === 'error') {
+          const newSearches = {
+            valid: this.state.previousSearches.valid,
+            invalid: [...this.state.previousSearches.invalid, searchTerm]
+          }
+          this.setState({
+            previousSearches: newSearches
+          })
+        } else {
+          const newSearches = {
+            valid: [...this.state.previousSearches.valid, searchTerm],
+            invalid: this.state.previousSearches.invalid
+          }
+          this.setState({
+            results: responseJson.message,
+            previousSearches: newSearches
+          })
+        }
+      })
       .catch(console.error)
   }
 
@@ -42,14 +68,16 @@ class MainLayout extends Component<{}, DogState> {
       })
     }
 
-    localStorage.setItem('favorites', JSON.stringify([...this.state.favorites, url]))
+    const newUrls = [...this.state.favorites, url]
+
+    localStorage.setItem('favorites', JSON.stringify(newUrls))
   }
 
 
   render() {
     return (
       <>
-        <SearchBar handleSearch={this.handleSearchClick} />
+        <SearchBar handleSearch={this.handleSearchClick} previousSearches={this.state.previousSearches} />
         <ResultsList columnCount={3} clickHeart={this.handleToggleFavorite} imgUrls={this.state.results} favorites={this.state.favorites} />
         <FavoritesList clickHeart={this.handleToggleFavorite} favorites={this.state.favorites} />
       </>

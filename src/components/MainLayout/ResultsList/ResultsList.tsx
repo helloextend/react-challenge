@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styled from '@emotion/styled'
 import Heart from '../../Heart';
-
+import { getRandomAmtFromArray } from '../../../assets/custom';
 
 interface Props {
   imgUrls: Array<string>,

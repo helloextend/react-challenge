@@ -6,6 +6,10 @@ import SearchBar from './SearchBar'
 
 const baseProps = {
   handleSearch: jest.fn(),
+  previousSearches: {
+    valid: [],
+    invalid: []
+  }
 };
 
 describe('SearchBar component', () => {
