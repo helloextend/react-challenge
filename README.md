@@ -1,6 +1,6 @@
 # Extend React Challenge
 
-This is bare-bones version of one of our client apps, where we ask candidates to build out a small application. The goal: give both the candidate and the Extend team a chance to interact on a realistic, but limited (shooting for just a few hours), task. We see this as a two-way evaluation, for the team and the candidate to decide if its a good fit.
+This exercise is a bare-bones version of one of our client apps, where we ask candidates to build out a small application. The goal: give both the candidate and the Extend team a chance to interact on a realistic, but limited (shooting for just a few hours), task. We see this as a two-way evaluation for the team and the candidate to decide if it's a good fit.
 
 ### Setup
 Copy this repository to your own private repository on GitHub
@@ -9,11 +9,12 @@ git clone https://github.com/helloextend/react-challenge.git
 cd react-challenge
 yarn
 yarn start
- ```
- You should now have the app running on http://localhost:8080
+```
+You should now have the app running on http://localhost:8080
 
 ## Challenge
-- Review the mock up available on [Figma](https://www.figma.com/file/GsigoCnExV2jjTBanMZwFr/Dog-Breeds) (you will need to sign up for a free figma account to be able to inspect all the elements for paddings/margins etc)
+- Review the mock up available on [Figma](https://www.figma.com/file/GsigoCnExV2jjTBanMZwFr/Dog-Breeds)
+**NOTE:** you may need to [sign up for a free Figma account](https://www.figma.com/signup) in order to inspect the styling properties required for the elements, such as paddings, margins, etc.
 
 - Review the [Dog.ceo api `By Breed` endpoint documentation](https://dog.ceo/dog-api/documentation/breed)
 
@@ -27,9 +28,9 @@ yarn start
 
 - Before the next interview, we will provide PR feedback, to give you a chance to improve your solution before the call
 
-- Feel free to ask questions, as we want to simulate working with the team
+- Feel free to ask questions via email, as we want to simulate working with the team
 
 ## Tips
-- Be sure to add accurate typings! 
+- Make sure to add accurate typings!
 
 - Add some tests to verify that your components are working properly
