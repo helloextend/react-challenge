@@ -1,0 +1,43 @@
+body {
+    margin: 25px;
+}
+
+.searchWrapper {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(4, 180px);
+    grid-gap: 10px;
+    background-color: #fff;
+}
+
+.favoriteWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 133px);
+    grid-template-rows: repeat(5, 150px);
+    grid-gap: 10px;
+    background-color: #fff;
+}
+
+.parent {
+    position: relative;
+}
+  
+img {
+    height: 80%;
+    width: 100%;
+    object-fit: fill;
+    z-index: 2;
+}
+
+.heartOverlay {
+	position: absolute;
+    bottom: 30px;
+    right: 0px;
+ }
+
+ .heartOverlayFaveDog {
+    position: absolute !important;
+    bottom: 25px !important;
+    right: 0px !important;
+ }
