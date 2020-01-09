@@ -1,7 +1,16 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import styled from '@emotion/styled'
 
-export class SearchBar extends Component {
+//   type Props {}
+interface State {
+  input: string
+}
+
+class SearchBar extends React.Component {
+  state: State = {
+    input: '',
+  }
+
   render() {
     return (
       <Container>
