@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import styled from '@emotion/styled'
 
+import { connect } from 'react-redux'
+import { getRandomImages } from '../redux/actions'
+
 export class Images extends Component {
   componentDidMount() {}
   render() {
@@ -13,4 +16,11 @@ const Container = styled.div({
   justifyContent: 'space-between',
 })
 
-export default Images
+const mapStateToProps = state => {
+  return {
+    ...state,
+    random_images: state.random_images,
+  }
+}
+
+export default connect(mapStateToProps, { getRandomImages })(Images)
