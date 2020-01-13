@@ -1,29 +1,17 @@
 // import { statement } from '@babel/template'
-import { LOAD_START, LOAD_SUCCESS, LOAD_FAILURE } from './actions'
+import { RandomImagesState, GET_RANDOM_IMAGES, ActionTypes } from './types'
 
-const initialState = {
-  random_images: [],
-  error: null,
+const initialState: RandomImagesState = {
+  images: [],
 }
 
-export const reducer = (state = initialState, action) => {
+export function reducer(state = initialState, action: ActionTypes): RandomImagesState {
   switch (action.type) {
-    case LOAD_START:
+    case GET_RANDOM_IMAGES:
       return {
-        ...state,
-        error: '',
-      }
-    case LOAD_SUCCESS:
-      return {
-        ...state,
-        random_images: action.payload,
-      }
-    case LOAD_FAILURE:
-      return {
-        ...state,
-        error: action.payload,
+        images: [...state.images, action.payload],
       }
     default:
-      return initialState
+      return state
   }
 }

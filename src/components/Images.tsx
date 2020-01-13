@@ -1,25 +1,51 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import styled from '@emotion/styled'
 
 import { connect } from 'react-redux'
+
+import { AppState } from '../redux/store'
+import { RandomImagesState } from '../redux/types'
 import { getRandomImages } from '../redux/actions'
 
-export class Images extends Component {
-  componentDidMount() {}
+interface ImagesProps {
+  getRandomImages: typeof getRandomImages
+  images: RandomImagesState
+}
+
+class Images extends React.Component<ImagesProps> {
+  componentDidMount() {
+    this.props.getRandomImages()
+  }
   render() {
-    return <Container></Container>
+    this.props.images[0] && console.log(this.props.images[0].status)
+    return (
+      <Container>
+        {this.props.images[0] &&
+          this.props.images[0].message.map(imageUrl => <ImageThumbnail src={imageUrl} alt="dog" />)}
+      </Container>
+    )
   }
 }
 
 const Container = styled.div({
   display: 'flex',
-  justifyContent: 'space-between',
+  flexFlow: 'row wrap',
+  justifyContent: 'space-around',
+  alignItems: 'space-between',
+  height: '100vh',
 })
 
-const mapStateToProps = state => {
+const ImageThumbnail = styled.img({
+  height: '25%',
+  width: '25%',
+  objectFit: 'cover',
+  margin: '0.5rem',
+  borderRadius: '5px',
+})
+
+const mapStateToProps = (state: AppState) => {
   return {
-    ...state,
-    random_images: state.random_images,
+    images: state.images,
   }
 }
 
