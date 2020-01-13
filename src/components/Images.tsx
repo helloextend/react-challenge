@@ -36,8 +36,8 @@ const Container = styled.div({
 })
 
 const ImageThumbnail = styled.img({
-  height: '25%',
-  width: '25%',
+  height: '140px',
+  width: '140px',
   objectFit: 'cover',
   margin: '0.5rem',
   borderRadius: '5px',

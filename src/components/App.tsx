@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import Header from './Header'
 import SearchBar from './SearchBar'
 import Images from './Images'
+import Favorites from "./Favorites"
 
 const App: FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: FC = () => {
       {/* Happy coding! */}
       <SearchBar />
       <Images />
+      <Favorites />
     </Container>
   )
 }
