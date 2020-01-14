@@ -1,7 +1,8 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 
-//   type Props {}
+export type UpdateInputParam = React.SyntheticEvent<{ value: string }>
+
 interface State {
   input: string
 }
@@ -11,11 +12,27 @@ class SearchBar extends React.Component {
     input: '',
   }
 
+  updateInput = (event: UpdateInputParam) => {
+    this.setState({ input: event.currentTarget.value })
+    console.log(this.state.input)
+  }
+
+  searchBreed = e => {
+    e.preventDefault()
+    const breed = this.state.input
+    this.setState({ input: '' })
+  }
+
   render() {
     return (
       <Container>
-        <Input></Input>
-        <Button>Search</Button>
+        <Input
+          placeholder="Type a dog breed..."
+          value={this.state.input}
+          onChange={this.updateInput}
+          name="input"
+        />
+        <Button onClick={this.searchBreed}>Search</Button>
       </Container>
     )
   }
