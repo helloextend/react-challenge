@@ -1,6 +1,7 @@
 # Extend React Challenge by Justin Chen 
 
 Github: github.com/justiny2c
+
 LinkedIn: linkedin.com/in/justinchen32
 
 Time:
