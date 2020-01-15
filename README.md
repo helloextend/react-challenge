@@ -5,7 +5,9 @@ LinkedIn: linkedin.com/in/justinchen32
 
 Time:
 - Started: last Thursday (01/09/2020)
-- Finished: 
+- Finished: Wednesday (01/14/2020)
+
+Application is able to "Favorite" any of the images, also able to search by Dog Breed
 
 This exercise is a bare-bones version of one of our client apps, where we ask candidates to build out a small application. The goal: give both the candidate and the Extend team a chance to interact on a realistic, but limited (shooting for just a few hours), task. We see this as a two-way evaluation for the team and the candidate to decide if it's a good fit.
 
@@ -18,6 +20,8 @@ yarn
 yarn start
 ```
 You should now have the app running on http://localhost:8080
+
+Random Dog Breed Images are loaded on first-start
 
 
 ## Challenge
