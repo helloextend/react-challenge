@@ -1,8 +1,8 @@
 # Extend React Challenge by Justin Chen 
 
-Github: github.com/justiny2c
+Github: https://github.com/justiny2c
 
-LinkedIn: linkedin.com/in/justinchen32
+LinkedIn: https://linkedin.com/in/justinchen32
 
 Time:
 - Started: last Thursday (01/09/2020)
