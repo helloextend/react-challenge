@@ -1,20 +1,45 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 
-// interface State {
-//   input: string
-// }
+import { connect } from 'react-redux'
 
-class Favorites extends React.Component {
-  //   state: State = {
-  //     input: '',
-  //   }
+import { AppState } from '../redux/store'
+import { RandomImagesState } from '../redux/types'
+import { addToFavorites, removeFromFavorites } from '../redux/actions'
+
+import Heart from './Heart'
+
+interface FavoritesProps {
+  favorites: []
+  addToFavorites: typeof addToFavorites
+  removeFromFavorites: typeof removeFromFavorites
+}
+
+class Favorites extends React.Component<FavoritesProps> {
+  toggleHeart = (e, str) => {
+    e.preventDefault()
+    this.props.removeFromFavorites(str)
+  }
 
   render() {
     return (
       <>
         <Title>Favorites</Title>
-        <Container></Container>
+        <Container>
+          {this.props.favorites.length > 0 &&
+            this.props.favorites.map((imageUrl, index) => (
+              <ImageContainer key={index}>
+                <ImageThumbnail src={imageUrl} alt="dog" />
+                <ImageIcon onClick={e => this.toggleHeart(e, imageUrl)}>
+                  {this.props.favorites.includes(imageUrl) ? (
+                    <Heart icon="redHeartIcon" alt="heart icon" />
+                  ) : (
+                    <Heart icon="whiteHeartIcon" alt="heart icon" />
+                  )}
+                </ImageIcon>
+              </ImageContainer>
+            ))}
+        </Container>
       </>
     )
   }
@@ -34,15 +59,38 @@ const Container = styled.div({
   flexFlow: 'row wrap',
   justifyContent: 'space-around',
   alignItems: 'space-between',
-  height: '100vh',
+  height: '100%',
 })
 
-const ImageThumbnail = styled.img({
+const ImageContainer = styled.div({
+  position: 'relative',
   height: '140px',
-  width: '140px',
-  objectFit: 'cover',
+  width: '25%',
   margin: '0.5rem',
   borderRadius: '5px',
 })
 
-export default Favorites
+const ImageThumbnail = styled.img({
+  display: 'block',
+  objectFit: 'cover',
+  height: '100%',
+  width: '100%',
+  borderRadius: '5px',
+})
+
+const ImageIcon = styled.div({
+  position: 'absolute',
+  bottom: '0',
+  right: '3px',
+  '&:hover': {
+    transform: 'scale(1.2)',
+  },
+})
+
+const mapStateToProps = (state: AppState) => {
+  return {
+    favorites: state.favorites,
+  }
+}
+
+export default connect(mapStateToProps, { addToFavorites, removeFromFavorites })(Favorites)

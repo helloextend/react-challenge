@@ -1,4 +1,11 @@
-# Extend React Challenge
+# Extend React Challenge by Justin Chen 
+
+Github: github.com/justiny2c
+LinkedIn: linkedin.com/in/justinchen32
+
+Time:
+- Started: last Thursday (01/09/2020)
+- Finished: 
 
 This exercise is a bare-bones version of one of our client apps, where we ask candidates to build out a small application. The goal: give both the candidate and the Extend team a chance to interact on a realistic, but limited (shooting for just a few hours), task. We see this as a two-way evaluation for the team and the candidate to decide if it's a good fit.
 
@@ -11,6 +18,7 @@ yarn
 yarn start
 ```
 You should now have the app running on http://localhost:8080
+
 
 ## Challenge
 - Review the mock up available on [Figma](https://www.figma.com/file/GsigoCnExV2jjTBanMZwFr/Dog-Breeds)
