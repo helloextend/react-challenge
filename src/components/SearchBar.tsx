@@ -1,21 +1,50 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 
-//   type Props {}
+import { connect } from 'react-redux'
+
+import { AppState } from '../redux/store'
+import { RandomImagesState } from '../redux/types'
+import { getBreedImages } from '../redux/actions'
+
+export type UpdateInputParam = React.SyntheticEvent<{ value: string }>
+
+interface ImagesProps {
+  getBreedImages: typeof getBreedImages
+  images: RandomImagesState
+}
+
 interface State {
   input: string
 }
 
-class SearchBar extends React.Component {
+class SearchBar extends React.Component<ImagesProps> {
   state: State = {
     input: '',
+  }
+
+  updateInput = (event: UpdateInputParam) => {
+    this.setState({ input: event.currentTarget.value })
+    console.log(this.state.input)
+  }
+
+  searchBreed = e => {
+    e.preventDefault()
+    const breed = this.state.input
+    this.props.getBreedImages(breed)
+    this.setState({ input: '' })
   }
 
   render() {
     return (
       <Container>
-        <Input></Input>
-        <Button>Search</Button>
+        <Input
+          placeholder="Type a dog breed..."
+          value={this.state.input}
+          onChange={this.updateInput}
+          name="input"
+        />
+        <Button onClick={this.searchBreed}>Search</Button>
       </Container>
     )
   }
@@ -48,4 +77,10 @@ const Button = styled.button({
   },
 })
 
-export default SearchBar
+const mapStateToProps = (state: AppState) => {
+  return {
+    images: state.images,
+  }
+}
+
+export default connect(mapStateToProps, { getBreedImages })(SearchBar)
