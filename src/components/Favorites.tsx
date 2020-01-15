@@ -57,15 +57,15 @@ const Title = styled.h1({
 const Container = styled.div({
   display: 'flex',
   flexFlow: 'row wrap',
-  justifyContent: 'space-around',
-  alignItems: 'space-between',
+  justifyContent: 'flex-start',
+  alignItems: 'flex-start',
   height: '100%',
 })
 
 const ImageContainer = styled.div({
   position: 'relative',
   height: '140px',
-  width: '25%',
+  width: '28%',
   margin: '0.5rem',
   borderRadius: '5px',
 })

@@ -28,7 +28,7 @@ class Images extends React.Component<ImagesProps> {
 
   toggleHeart = (e, str) => {
     e.preventDefault()
-    if(this.props.favorites.includes(str)){
+    if (this.props.favorites.includes(str)) {
       this.props.removeFromFavorites(str)
     } else {
       this.props.addToFavorites(str)
@@ -59,16 +59,16 @@ class Images extends React.Component<ImagesProps> {
 const Container = styled.div({
   display: 'flex',
   flexFlow: 'row wrap',
-  justifyContent: 'space-around',
+  justifyContent: 'space-between',
   alignItems: 'space-between',
-  height: '100vh',
+  height: '118vh',
 })
 
 const ImageContainer = styled.div({
   position: 'relative',
   height: '140px',
-  width: '25%',
-  margin: '0.5rem',
+  width: '28%',
+  margin: '0.25rem 0.5rem',
   borderRadius: '5px',
 })
 
@@ -96,4 +96,6 @@ const mapStateToProps = (state: AppState) => {
   }
 }
 
-export default connect(mapStateToProps, { getRandomImages, addToFavorites, removeFromFavorites })(Images)
+export default connect(mapStateToProps, { getRandomImages, addToFavorites, removeFromFavorites })(
+  Images,
+)
