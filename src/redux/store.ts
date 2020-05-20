@@ -1,8 +1,7 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import { reducer } from './reducer'
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import { favoritesReducer } from './favoritesReducer'
 import { dogsReducer } from './dogsReducer'
-import thunk, { ThunkMiddleware } from 'redux-thunk'
+import thunk from 'redux-thunk'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 

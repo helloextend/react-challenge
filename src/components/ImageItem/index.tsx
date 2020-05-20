@@ -11,7 +11,7 @@ interface ImageItemProps {
   likedCurrently: boolean
 }
 
-const ImageItem: ImageItemProps = ({ alt, image, likedCurrently }) => {
+const ImageItem = ({ alt, image, likedCurrently }: ImageItemProps) => {
   const [liked, setLiked] = useState(false)
 
   const dispatch = useDispatch()

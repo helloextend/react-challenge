@@ -54,6 +54,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
+    "@types/enzyme": "^3.10.5",
     "axios": "^0.19.2",
     "lodash": "^4.17.15",
     "react-hot-loader": "^4.12.15",

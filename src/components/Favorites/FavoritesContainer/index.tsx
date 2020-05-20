@@ -17,7 +17,7 @@ export const Container = styled.div({
 })
 
 export const Title = styled.h1({
-  paddingLeft: '25px'
+  paddingLeft: '25px',
   fontWeight: 'bold',
   fontSize: '24px',
   lineHeight: '33px',
