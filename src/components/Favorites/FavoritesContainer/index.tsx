@@ -1,25 +1,26 @@
 import React, { FC } from 'react'
 import styled from '@emotion/styled'
-import Heart from './Heart'
+import Heart from '../../Heart'
+import FavoriteList from '../FavoritesList'
 
-const Header: FC = () => {
+const Favorites: FC = () => {
   return (
     <Container>
-      <Title>Dog Breeds</Title>
       <Heart icon="redHeartIcon" alt="red heart icon" />
+      <Title>Favorites</Title>
     </Container>
   )
 }
 
-const Container = styled.div({
+export const Container = styled.div({
   display: 'flex',
-  justifyContent: 'space-between',
 })
 
-const Title = styled.h1({
+export const Title = styled.h1({
+  paddingLeft: '25px'
   fontWeight: 'bold',
   fontSize: '24px',
   lineHeight: '33px',
 })
 
-export default Header
+export default Favorites

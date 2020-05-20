@@ -10,7 +10,7 @@
         "esModuleInterop": true,
     },
     "include": [
-        "./src/**/*", "src/components/App.test.tsx"
+        "./src/**/*", "src/components/App/App.test.tsx"
     ],
     "awesomeTypescriptLoaderOptions": {
         "reportFiles": [
