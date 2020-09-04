@@ -34,7 +34,7 @@
     "jest": "^24.9.0",
     "jest-environment-enzyme": "^7.1.1",
     "jest-enzyme": "^7.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "rimraf": "^3.0.0",
