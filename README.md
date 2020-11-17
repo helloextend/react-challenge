@@ -31,6 +31,8 @@ yarn start
 
 You should now have the app running on http://localhost:8080
 
+Note: If you are receiving errors on startup regarding `node-sass` or `image-webpack-loader`, try running `npm rebuild` and then re-running the application.
+
 This project leverages TSLint to lint your code, and Prettier to format it. You can automatically run these in your IDE by installing the TSLint and Prettier extensions for your IDE.
 
 At any time, you can also run lint via `yarn lint`, and format your code via `yarn format`.
