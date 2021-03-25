@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import { hot } from 'react-hot-loader/root'
 import styled from '@emotion/styled'
 import Header from './Header'
 import { colors } from '../assets'
@@ -20,4 +19,4 @@ const Container = styled.div({
   background: colors.white,
 })
 
-export default hot(App)
+export default App

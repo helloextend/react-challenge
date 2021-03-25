@@ -1,4 +1,6 @@
-{
+const { defaults: tsjPreset } = require('ts-jest/presets')
+
+module.exports = {
   "rootDir": "..",
   "coverageDirectory": "<rootDir>/tests/__coverage__/",
   "setupFiles": [
@@ -12,9 +14,14 @@
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/fileMock.js",
     "\\.(css|scss|less)$": "<rootDir>/tests/__mocks__/styleMock.js"
   },
-  "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx"
+  ],
   "transform": {
-    "^.+\\.(ts|tsx)$": "<rootDir>/configs/jest.preprocessor.js"
+    ...tsjPreset.transform,
   },
   "transformIgnorePatterns": [
     "/node_modules/"
