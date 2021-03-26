@@ -3,6 +3,6 @@ dist/
 node_modules/
 coverage/
 src/**/*.jsx
-tests/__coverage__/
+__mocks__/
 tests/**/*.jsx
 .DS_Store
