@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import { hot } from 'react-hot-loader/root'
 import styled from '@emotion/styled'
 import Header from './Header'
 
@@ -19,4 +18,4 @@ const Container = styled.div({
   paddingTop: '60px',
 })
 
-export default hot(App)
+export default App
