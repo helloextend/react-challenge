@@ -53,8 +53,8 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.22",
-    "@emotion/styled": "^10.0.22",
+    "@emotion/core": "^10.3.0",
+    "@emotion/styled": "^10.3.0",
     "@hot-loader/react-dom": "16.10.2",
     "react-hot-loader": "^4.12.15",
     "react-redux": "^7.1.1",
