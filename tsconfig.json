@@ -6,7 +6,7 @@
         "module": "commonjs",
         "target": "es5",
         "jsx": "react",
-        "lib": ["es5", "es6", "dom"],
+        "lib": ["es2019", "esnext", "dom"],
         "esModuleInterop": true,
     },
     "include": [
