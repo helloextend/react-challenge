@@ -49,13 +49,11 @@ At any time, you can also run lint via `yarn lint`, and format your code via `ya
 
 - You should be able to favorite and unfavorite images of dogs, moving them into and out of the favorites section of the page
 
-- Submit a PR in your repository, with a descriptive message, and no more than a few commits (each with a clear purpose)
-
-- In your private repository, add `romeldris` as a collaborator, and send an email to `romel@extend.com` with a link to your repository
+- Submit a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) in your repository, with a descriptive message, and no more than a few commits (each with a clear purpose).
 
 - Before the next interview, we will provide PR feedback, to give you a chance to improve your solution before the call
 
-- Feel free to ask questions via email,  as we want to simulate working with the team. Romel can be reached via email at `romel@extend.com`
+- Feel free to ask questions, as we want to simulate working with the team.
 
 ## Tips
 - Make sure to add accurate typings!
