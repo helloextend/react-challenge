@@ -1,12 +1,17 @@
 import React, { FC } from 'react'
 import styled from '@emotion/styled'
 import Header from './Header'
+import SearchBox from './SearchBox'
+import SearchResults from './SearchResults'
+import Favourites from './Favourites'
 
 const App: FC = () => {
   return (
     <Container>
       <Header />
-      {/* Happy coding! */}
+      <SearchBox />
+      <SearchResults />
+      <Favourites />
     </Container>
   )
 }
