@@ -1,4 +1,7 @@
 import { createStore } from 'redux'
-import { reducer } from './reducer'
+import { favoriteReducer } from './reducer'
 
-export default createStore(reducer)
+
+const store = createStore(favoriteReducer)
+
+export default store
