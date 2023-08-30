@@ -6,7 +6,7 @@ const App: FC = () => {
   return (
     <Container>
       <Header />
-      {/* Happy coding! */}
+      <h1>Search Any Breed Of Dogs</h1>
     </Container>
   )
 }
