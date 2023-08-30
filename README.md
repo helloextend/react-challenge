@@ -1,61 +1,70 @@
-# Extend React Challenge
+# Getting Started with Create React App
 
-This exercise is a bare-bones version of one of our client apps, where we ask candidates to build out a small application. The goal: give both the candidate and the Extend team a chance to interact on a realistic, but limited (shooting for just a few hours), task. We see this as a two-way evaluation for the team and the candidate to decide if it's a good fit.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Setup
+## Available Scripts
 
-1. If you haven't already, Signup for GitHub and [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+In the project directory, you can run:
 
-2. [Create a new repository](https://github.com/new) called `react-challenge` and set it to Private.
+### `npm start`
 
-3. Clone this repository.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-   `git clone git@github.com:helloextend/react-challenge.git`
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-4. `cd` into the cloned `react-challenge` repo and add your private repository as a remote, so you can push to it.
+### `npm test`
 
-   `git remote add upstream git@github.com:YOUR_USERNAME/react-challenge.git`
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-5. Create a new branch off the `react-challenge` repo, where you can make your code changes and open a PR to the `master` branch once you're done.
+### `npm run build`
 
-   `git checkout -b challenge`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-6. After you've finished coding the challenge, when you're ready to push your code to your branch, make sure to do `git push upstream challenge`.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Make sure you have Node.js setup and `yarn` installed globally, then start the repo:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
-yarn
-yarn start
-```
+### `npm run eject`
 
-You should now have the app running on http://localhost:8080
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Note: If you are receiving errors on startup regarding `node-sass` or `image-webpack-loader`, try running `npm rebuild` and then re-running the application.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-This project leverages TSLint to lint your code, and Prettier to format it. You can automatically run these in your IDE by installing the TSLint and Prettier extensions for your IDE.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-At any time, you can also run lint via `yarn lint`, and format your code via `yarn format`.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-**Before submitting your code, please make sure to lint and format it.**
+## Learn More
 
-## Challenge
-- Review the mock up available on [Figma](https://www.figma.com/file/GsigoCnExV2jjTBanMZwFr/Dog-Breeds)
-**NOTE:** you may need to [sign up for a free Figma account](https://www.figma.com/signup) in order to inspect the styling properties required for the elements, such as paddings, margins, etc.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Review the [Dog.ceo api `By Breed` endpoint documentation](https://dog.ceo/dog-api/documentation/breed)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- The goal of this challenge is to be able to search for a breed of dogs in a search input and then display up to 10 images of that breed of dog on screen
+### Code Splitting
 
-- You should be able to favorite and unfavorite images of dogs, moving them into and out of the favorites section of the page
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Submit a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) in your repository, with a descriptive message, and no more than a few commits (each with a clear purpose).
+### Analyzing the Bundle Size
 
-- Before the next interview, we will provide PR feedback, to give you a chance to improve your solution before the call
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- Feel free to ask questions, as we want to simulate working with the team.
+### Making a Progressive Web App
 
-## Tips
-- Make sure to add accurate typings!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- Add some tests to verify that your components are working properly
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
