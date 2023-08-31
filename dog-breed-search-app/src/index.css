@@ -1,0 +1,37 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-header {
+  color: black;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.results{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  column-gap:6rem;
+  row-gap:1rem;
+
+}
+
+.search-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  column-gap:6rem;
+  row-gap:1rem;
+
+}
