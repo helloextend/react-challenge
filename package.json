@@ -12,7 +12,8 @@
     "lint": "tslint './src/**/*.ts*' --format stylish --project . --force",
     "start": "yarn run start-dev",
     "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
-    "test": "jest --watch --coverage --config=configs/jest.config.js"
+    "test": "jest --watch --coverage --config=configs/jest.config.js",
+    "build":"yarn run build"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
