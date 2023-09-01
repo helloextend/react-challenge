@@ -38,7 +38,7 @@ const DogImages = ({images }) => {
             {likedImages.map((image, index) => (
               <div key={index} className = "img-container">
                 <img src={image}  className='image' alt={`${index}` } />
-                <img src = {rlike} className="like" onClick={() => toggleLike(image)}/> :
+                <img src = {rlike} className="like" onClick={() => toggleLike(image)}/>
               </div>
             ))}
           </div>
