@@ -1,0 +1,86 @@
+
+.DogImages {
+  text-align: center; /* Center-align the component content */
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Center items horizontally */
+  margin: 20px 0;
+}
+
+.SearchBar input[type="text"] {
+  padding: 10px 20px; 
+  flex: 1; /* Allow the input to take up remaining space */
+  border: 1px solid #ccc;
+  border-radius: 24px; /* Create a rounded input like Google */
+  outline: none;
+  max-width: 400px; /* Set a maximum width for the input */
+  transition: box-shadow 0.3s; /* Add a transition for the glow effect */
+}
+
+/* Add the glowing effect on hover */
+.SearchBar input[type="text"]:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Adjust the shadow color and size as needed */
+}
+
+.SearchBar button {
+  padding: 10px 20px; /* Adjust padding for Google-like appearance */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 24px; /* Create a rounded button like Google */
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.SearchBar button:hover {
+  background-color: #0056b3;
+}
+
+
+  
+  .ImageList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .ImageContainer {
+    text-align: center;
+    position: relative; /* Required for positioning the "Favorite" button */
+    height: 300px; /* Set a fixed height to avoid overlapping */
+    overflow: hidden; /* Hide any extra content */
+  }
+  
+  .ImageContainer img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure images fit within the container */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .ImageContainer button {
+    display: none; /* Initially hide the "Favorite" button */
+    position: absolute;
+    top: 50%; /* Position at the center vertically */
+    left: 50%; /* Position at the center horizontally */
+    transform: translate(-50%, -50%);
+    padding: 6px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ImageContainer:hover button {
+    display: block; /* Show the "Favorite" button on hover */
+  }
+  
+  .ImageContainer button:hover {
+    background-color: #c82333;
+  }
+  
