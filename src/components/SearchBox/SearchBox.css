@@ -1,0 +1,42 @@
+.input{
+    background-color: #f7f7f7;
+    width: 75%;
+    border : 0px transparent;
+    height: 3em;
+    border-radius:4px ;
+    outline: none;
+}
+
+.searchBox{
+    width: 100%;
+    display: inline-flex; 
+    margin-top : 5%;
+    
+}
+
+.button{
+    width: 25%;
+    height: 3em;
+    padding:10px 20px;
+    background-color: #0794E3;
+    border: none;
+    color : white;
+    font-weight: 700;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    cursor:pointer;
+    justify-content: center;
+    
+}
+.input:focus {
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    padding : 0px 10px;
+  
+}
+.img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+}

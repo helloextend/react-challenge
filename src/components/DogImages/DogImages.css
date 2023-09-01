@@ -1,0 +1,45 @@
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.image-div{
+    width: 100%;
+    margin: 40px 0px;
+}
+
+span{
+    margin: 30px;
+    font-family: Nunito Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+}
+
+.favorite{
+    border-top: 1px solid #DADADA;
+}
+
+.image{
+    width: 8.5em;
+    height: 8.5em; 
+    margin: 10px 0px;
+    border-radius: 5px;
+    z-index: 0;
+    /* position: absolute; */
+}
+
+.img-container{
+    position: relative;
+}
+.like{
+    right: 8%;
+    bottom: 12%;
+    position: absolute;
+    z-index: 1;
+}
