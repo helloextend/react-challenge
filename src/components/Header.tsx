@@ -13,7 +13,10 @@ const Header: FC = () => {
 
 const Container = styled.div({
   display: 'flex',
-  justifyContent: 'space-between',
+   justifyContent: 'space-between',
+  '@media (max-width: 600px)': {
+    marginTop:'30px',
+  },
 })
 
 const Title = styled.h1({
