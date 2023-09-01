@@ -8,13 +8,21 @@ interface Props {
 }
 
 const Heart: FC<Props> = ({ icon, alt }) => {
-  return <HeartIcon src={icons[icon]} alt={alt} />
+  return (
+    <Container>
+      <HeartIcon src={icons[icon]} alt={alt} />
+    </Container>
+  )
 }
 
-const HeartIcon = styled.img({
-  width: '17px',
-  height: '15px',
-  alignSelf: 'center',
-})
+const Container = styled.div`
+  position: relative;
+  align-self: center;
+`
+
+const HeartIcon = styled.img`
+  width: 16.73px;
+  height: 15px;
+`
 
 export default Heart

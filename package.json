@@ -12,7 +12,8 @@
     "lint": "tslint './src/**/*.ts*' --format stylish --project . --force",
     "start": "yarn run start-dev",
     "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
-    "test": "jest --watch --coverage --config=configs/jest.config.js"
+    "test": "jest --watch --coverage --config=configs/jest.config.js",
+    "format": "prettier --write \"src/**/*.tsx\""
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
@@ -35,6 +36,7 @@
     "jest-environment-enzyme": "^7.1.1",
     "jest-enzyme": "^7.1.1",
     "node-sass": "^4.13.1",
+    "prettier": "^3.0.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "rimraf": "^3.0.0",
@@ -43,7 +45,9 @@
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^5.1.1",
     "ts-jest": "^26.5.4",
-    "tslint": "^5.20.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
     "typescript": "4.5.4",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.41.1",
@@ -56,6 +60,7 @@
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
     "@hot-loader/react-dom": "16.10.2",
+    "axios": "^1.5.0",
     "react-hot-loader": "^4.12.15",
     "react-redux": "^7.1.1",
     "redux": "^4.0.4"
