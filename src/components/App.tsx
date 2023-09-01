@@ -1,14 +1,14 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
 import Header from "./Header";
-import Search_Bar from "./SearchBar";
+import SearchBar from "./SearchBar";
 import DogList from "./DogList";
 
 const App: FC = () => {
   return (
     <Container>
       <Header />
-      <Search_Bar />
+      <SearchBar />
       <DogList />
     </Container>
   );

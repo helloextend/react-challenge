@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import useHttps from "../hooks/use-https";
 import { useSelector, useDispatch } from "react-redux";

@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../redux/store";
 import { dogBreedHandler } from "../redux/listDogs-slice";
 
-const Search_Bar: FC = () => {
+const Searchbar: FC = () => {
   const [dogBreed, setDogBreed] = useState("");
 
   const inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +17,6 @@ const Search_Bar: FC = () => {
   const dispatch = useDispatch();
 
   const searchForDogsHandler = () => {
-    // e.preventDefault();
     dispatch(dogBreedHandler(dogBreed));
     console.log("breed->", breed);
   };
@@ -81,11 +80,6 @@ const Container = styled.div({
   marginTop: "64px",
 });
 
-const Title = styled.h1({
-  fontWeight: "bold",
-  fontSize: "24px",
-  lineHeight: "33px",
-});
 const SearchBar = styled.div({
   width: "560px",
   height: "36px",
@@ -97,4 +91,4 @@ const SearchBar = styled.div({
   overflow: "hidden",
 });
 
-export default Search_Bar;
+export default Searchbar;
