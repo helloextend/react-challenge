@@ -19,9 +19,6 @@ const DogList: FC = () => {
     dogImage: string;
   }
 
-  // or using type
-
-  // Usage in your component
   const [dogList, setDogList] = useState<DogListItem[]>([]);
 
   const breed = useSelector((state: RootState) => state.dogBreed.breed);
@@ -45,8 +42,6 @@ const DogList: FC = () => {
     }
   };
 
-  // const likedDogsHandler = () => {};
-
   useEffect(() => {
     console.log(breed);
     let urlForBreed =
@@ -56,16 +51,10 @@ const DogList: FC = () => {
     if (breed === "") {
       alert("please don't leave it empty");
       return;
-      // urlForBreed = "https://dog.ceo/api/breed/affenpinscher/images/random/10";
     } else {
       sendRequest({ url: urlForBreed }, fetchData);
     }
   }, [breed, sendRequest]);
-
-  // Log the updated dogList when it changes
-  // useEffect(() => {
-  //   console.log(dogList);
-  // }, [dogList]);
 
   return (
     <div>
@@ -99,10 +88,7 @@ const DogList: FC = () => {
           <img src={loading} alt="" style={{ margin: "auto" }}></img>
         </div>
       )}
-      {/* <span
-        style={{ width: "560px", height: "1px", backgroundColor: "black" }}
-      ></span> */}
-      {/* <hr style={{ color: "#DADADA" }} /> */}
+
       <FTContainer>
         <img src={redHeart} alt=""></img>
         <h2 style={{ marginLeft: "30px", fontWeight: "700", fontSize: "24px" }}>
@@ -151,7 +137,6 @@ const Container = styled.div({
   gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
   gap: "34px",
   alignItems: "center",
-  // padding: "10px",
   justifyItems: "center",
   justifyContent: "start",
   width: "560px",
@@ -173,7 +158,6 @@ const FTContainer = styled.div({
   width: "560px",
   height: "25px",
   marginTop: "34px",
-  // marginBottom: "34px",
   alignItems: "center",
   justifyContent: "flex-start",
 });

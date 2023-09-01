@@ -5,11 +5,6 @@ import Search_Bar from "./SearchBar";
 import DogList from "./DogList";
 
 const App: FC = () => {
-  // const [breed, setBreed] = useState('')
-  // const dogBreed = (dogBreed) => {
-  //   setBreed(dogBreed)
-  // }
-
   return (
     <Container>
       <Header />
