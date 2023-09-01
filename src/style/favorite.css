@@ -1,0 +1,48 @@
+
+.Favorites {
+    margin-top: 30px;
+  }
+  
+  .Favorites h2 {
+    margin-bottom: 20px;
+  }
+  
+  .FavoriteList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between images */
+  }
+  
+  .FavoriteImage {
+    position: relative;
+  }
+  
+  .FavoriteImage img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure images fit within the container */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .RemoveButton {
+    display: none; /* Initially hide the "Remove" button */
+    position: absolute;
+    top: 50%; /* Position at the center vertically */
+    left: 50%; /* Position at the center horizontally */
+    transform: translate(-50%, -50%);
+    padding: 6px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .FavoriteImage:hover .RemoveButton {
+    display: block; /* Show the "Remove" button on hover */
+  }
+  
+  .RemoveButton:hover {
+    background-color: #c82333;
+  }
+  

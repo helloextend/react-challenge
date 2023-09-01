@@ -1,8 +1,0 @@
-.idea/
-dist/
-node_modules/
-coverage/
-src/**/*.jsx
-__mocks__/
-tests/**/*.jsx
-.DS_Store
