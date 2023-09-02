@@ -1,63 +1,53 @@
 {
-  "name": "extend-react-challenge",
-  "version": "0.0.1",
-  "description": "A coding challenge for extend front end candidates",
-  "author": "Extend",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": ""
+  "name": "react-challenge-2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "enzyme": "^3.11.0",
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "lint": "tslint './src/**/*.ts*' --format stylish --project . --force",
-    "start": "yarn run start-dev",
-    "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
-    "test": "jest --watch --coverage --config=configs/jest.config.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.12",
-    "@types/react": "^16.9.5",
-    "@types/react-dom": "^16.9.1",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "file-loader": "^4.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "image-webpack-loader": "^6.0.0",
-    "jest": "^26.6.3",
-    "jest-environment-enzyme": "^7.1.1",
-    "jest-enzyme": "^7.1.1",
-    "node-sass": "^4.13.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "rimraf": "^3.0.0",
-    "sass-loader": "^8.0.0",
-    "source-map-loader": "^0.2.4",
-    "style-loader": "^1.0.0",
-    "terser-webpack-plugin": "^5.1.1",
-    "ts-jest": "^26.5.4",
-    "tslint": "^5.20.0",
-    "typescript": "4.5.4",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.41.1",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-middleware": "^3.7.2",
-    "webpack-dev-server": "^3.8.2",
-    "webpack-merge": "^4.2.2"
-  },
-  "dependencies": {
-    "@emotion/core": "^10.0.22",
-    "@emotion/styled": "^10.0.22",
-    "@hot-loader/react-dom": "16.10.2",
-    "react-hot-loader": "^4.12.15",
-    "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/enzyme": "^3.10.13"
   }
 }
