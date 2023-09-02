@@ -18,7 +18,6 @@ const Searchbar: FC = () => {
 
   const searchForDogsHandler = () => {
     dispatch(dogBreedHandler(dogBreed));
-    console.log("breed->", breed);
   };
 
   return (
