@@ -1,12 +1,17 @@
 import React, { FC } from 'react'
 import styled from '@emotion/styled'
 import Header from './Header'
+import Home from './Home/Home'
+import { Provider } from 'react-redux'
+import store from '../redux/store'
 
 const App: FC = () => {
   return (
     <Container>
       <Header />
-      {/* Happy coding! */}
+      <Provider store = {store}>
+          <Home />
+      </Provider>
     </Container>
   )
 }
