@@ -1,3 +1,5 @@
+i created the app, the link is in the gform
+
 # Extend React Challenge
 
 This exercise is a bare-bones version of one of our client apps, where we ask candidates to build out a small application. The goal: give both the candidate and the Extend team a chance to interact on a realistic, but limited (shooting for just a few hours), task. We see this as a two-way evaluation for the team and the candidate to decide if it's a good fit.
