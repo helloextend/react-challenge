@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .dog_breed{
+    text-align: center;
+  }
+  .filter_box{
+    width: 60%;
+    height: 10vh;
+    margin: auto;
+    display: block;
+    border: 1px solid rgb(97, 117, 163);
+    color: black;
+  }
+  .row{
+    border: 2px solid grey;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    height: fit-content;
+    padding: 5px;
+    outline-width:2px solid grey;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .image-container {
+    position: relative;
+  }
+  .favorite-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  hr{
+    border: 2px solid black;
+    border-radius: 3px;
+  }
