@@ -1,12 +1,14 @@
-import React, { FC } from 'react'
-import styled from '@emotion/styled'
-import Header from './Header'
+import React, { FC } from 'react';
+import styled from '@emotion/styled';
+import Header from './Header';
+import FetchFilterDogBreedApi from './FetchFilterDogBreedApi';
 
 const App: FC = () => {
   return (
     <Container>
-      <Header />
+      {/* <Header /> */}
       {/* Happy coding! */}
+      <FetchFilterDogBreedApi></FetchFilterDogBreedApi>
     </Container>
   )
 }
