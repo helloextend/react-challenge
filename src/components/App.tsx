@@ -14,10 +14,10 @@ const App: FC = () => {
 }
 
 const Container = styled.div({
-  // margin: '0 auto',
-  // height: '100%',
-  // width: '560px',
-  // paddingTop: '60px',
+  margin: '0 auto',
+  height: '100%',
+  width: '560px',
+  paddingTop: '60px',
 })
 
 export default App

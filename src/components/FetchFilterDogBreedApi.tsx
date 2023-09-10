@@ -64,7 +64,7 @@ function FetchFilterDogBreedApi() {
                 onClick={() => toggleFavorite(item)}
                 style={{
                   fontSize: "30px",
-                  color: favorites.includes(item) ? "grey" : "white", // Change color based on favorite status
+                  color: favorites.includes(item) ? "red" : "white", // Change color based on favorite status
                   backgroundColor: "transparent",
                   border: "none",
                 }}
