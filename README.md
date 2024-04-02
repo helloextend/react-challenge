@@ -37,8 +37,7 @@ This project leverages TSLint to lint your code, and Prettier to format it. You 
 
 At any time, you can also run lint via `yarn lint`, and format your code via `yarn format`.
 
-**Before submitting your code, please make sure to lint and format it.**
-
+**Before submitting your code, please make sure to lint and format it.** 🙏
 ## Challenge
 - Review the mock up available on [Figma](https://www.figma.com/file/GsigoCnExV2jjTBanMZwFr/Dog-Breeds)
 **NOTE:** you may need to [sign up for a free Figma account](https://www.figma.com/signup) in order to inspect the styling properties required for the elements, such as paddings, margins, etc.
