@@ -58,6 +58,6 @@
     "@hot-loader/react-dom": "16.10.2",
     "react-hot-loader": "^4.12.15",
     "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "redux": "^4.1.0"
   }
 }
